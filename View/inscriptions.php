@@ -10,8 +10,6 @@
     if(isset($valider))
     {
     	require_once '../Controller/ManagerUser.php';
-    	
-    	
     	$user = new ManagerUser();
     	$user->addUser($Username, $Password, $Mail, $notif);
     }
@@ -72,8 +70,6 @@
                 </div>
                 <?php } ?>
 			</form>
-			
-			<div><h5><a href="inscriptions.php" class="fs-5" id="voirMdp">Je n'ai pas de compte !</a></h5></div>
 		</main>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

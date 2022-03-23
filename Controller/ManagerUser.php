@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Manager.php';
+require_once '../Model/User.php';
 
 class ManagerUser extends Manager
 {
