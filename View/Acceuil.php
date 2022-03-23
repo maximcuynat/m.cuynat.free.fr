@@ -10,10 +10,15 @@
 		<header>
 			<div class="responsive display-flex al-it-center flex-column">
 				<div>
-					<h1 class="text-white display-1">Mon rêve, l'espace</h1>
+					<h1 class="text-white text-center display-1 mb-0">Mon rêve, l'espace</h1>
 				</div>
 				<div>
-					<p>Ediant en deuxième année chez CESI école d'ingénieurs</p>
+					<p class="text-white text-center fs-4 mt-0">Ediant en deuxième année chez <a href="">CESI école d'ingénieurs</a></p>
+				</div>
+			</div>
+			<div class="fixed-top responsive display-flex jc-end">
+				<div>
+					<h1 class="text-white"><a href="connexion.php">Se connecter</a></h1>
 				</div>
 			</div>
 		</header>
