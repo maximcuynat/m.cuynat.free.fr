@@ -1,6 +1,12 @@
 /* Propriété du doccument */
 	*{
 		transition: .5s;
+	    -webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
 	}
 	body{
 		font-family: 'Times New Roman', serif;;
@@ -14,6 +20,14 @@
 	{
 	    text-decoration: underline;
 	    font-size: 105%;
+	}
+	.unselectable {
+	    -webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
 	}
 /* ============== Couleur et polices */
 
@@ -103,6 +117,9 @@
 	}
 	.bg-asphalt{
 		background-color: #34495e;
+	}
+	.bg-midnightBlue{
+		background-color: #2c3e50;
 	}
 /* ============== Autre couleurs de fond */
 /* ============== Marging / padding */
@@ -597,7 +614,7 @@
 	.fw-bolder {
 	  font-weight: bolder !important;
 	}
-/* ============== Fied top / bottom */
+/* ============== Fied top / bottom / Sticky */
 	.fixed-top {
 	  position: fixed;
 	  top: 0;
@@ -659,6 +676,99 @@
 	    top: 0;
 	    z-index: 1020;
 	  }
+	}
+	.sticky-top {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0;
+	  z-index: 1020;
+	}
+/* ============== with */
+	.w-25 {
+	  width: 25% !important;
+	}
+
+	.w-40 {
+	  width: 40% !important;
+	}
+
+	.w-50 {
+	  width: 50% !important;
+	}
+
+	.w-75 {
+	  width: 75% !important;
+	}
+
+	.w-100 {
+	  width: 100% !important;
+	}
+/* ============== Border rounded */
+	.rounded {
+	  border-radius: 0.25rem !important;
+	}
+
+	.rounded-0 {
+	  border-radius: 0 !important;
+	}
+
+	.rounded-1 {
+	  border-radius: 0.2rem !important;
+	}
+
+	.rounded-2 {
+	  border-radius: 0.4rem !important;
+	}
+
+	.rounded-3 {
+	  border-radius: 0.6rem !important;
+	}
+
+	.rounded-circle {
+	  border-radius: 50% !important;
+	}
+
+	.rounded-pill {
+	  border-radius: 50rem !important;
+	}
+
+	.rounded-top {
+	  border-top-left-radius: 0.25rem !important;
+	  border-top-right-radius: 0.25rem !important;
+	}
+
+	.rounded-end {
+	  border-top-right-radius: 0.25rem !important;
+	  border-bottom-right-radius: 0.25rem !important;
+	}
+
+	.rounded-bottom {
+	  border-bottom-right-radius: 0.25rem !important;
+	  border-bottom-left-radius: 0.25rem !important;
+	}
+
+	.rounded-start {
+	  border-bottom-left-radius: 0.25rem !important;
+	  border-top-left-radius: 0.25rem !important;
+	}
+/* ============================ Form */
+	::placeholder{
+		color: #ecf0f1;
+	}
+	input:hover{
+		background-color: #34495e;
+	}
+	input{
+		background-color: #2c3e50;
+		color: #ecf0f1;
+	}
+/* curseur */
+	.cursor-pointer {
+	    cursor: pointer;
+	}
+
+	.cursor-text {
+	    cursor: text;
 	}
 /* ============== Display flex */
 	.display-flex{
