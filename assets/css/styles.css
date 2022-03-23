@@ -1,0 +1,168 @@
+
+
+/* Couleurs de fond */
+
+.bg-DeepBlue{
+	background-color: #323071;
+}
+
+.bg-Eucalyptus{
+	background-color: #45D0B5;
+}
+.bg-Persian{
+	background-color: #03AB99;
+}
+.bg-Independence{
+	background-color: #49576B;
+}
+
+/* Autre couleurs de fond */
+
+/**
+ *  Css pour le responsive :
+ *  Liens ver le site 
+ *  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
+
+.display-flex{
+    display: flex !important ;
+}
+
+/* ==================================================================== Properties for the Parent (flex container) */
+
+/* ============== Alignement des boites */
+
+.flex-row{
+    flex-direction: row !important ;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse !important ;
+}
+
+.flex-column{
+    flex-direction: column !important ;
+} 
+
+.flex-column-reverse{
+    flex-direction: column-reverse !important ;
+}
+
+/* ============== Retourr à la ligne des div  */
+.felx-warp{
+    flex-wrap: wrap !important ;
+}
+.felx-warp-reverse{
+    flex-wrap: wrap-reverse !important ;
+}
+
+/* ============== Alignement des element dans le div */
+
+.jc-start{
+    justify-content: start !important ;
+}
+.js-end{
+    justify-content: end !important ;
+}
+
+.js-center{
+    justify-content: center !important ;
+}
+.js-space-between{
+    justify-content: space-between !important ;
+}
+.js-space-around{
+    justify-content: space-around !important ;
+}
+.js-space-evenly{
+    justify-content: space-evenly !important ;
+}
+
+/* ============== Alignement des items VERTICAL */
+.al-it-start{
+    align-items: flex-start !important ;
+}
+.al-it-end{
+    align-items: flex-end !important ;
+}
+.al-it-center{
+    align-items: center !important ;
+}
+.al-it-stretch{
+    align-items: stretch !important ;
+}
+.al-it-baseline{
+    align-items: baseline !important ;
+}
+
+/* ============== Alignement des items dans la boite */
+.al-ct-start{
+    align-content: flex-start !important ;
+}
+.al-ct-end{
+    align-content: flex-end !important ;
+}
+.al-ct-center{
+    align-content: center !important ;
+}
+.al-ct-stretch{
+    align-content: stretch !important ;
+}
+.al-ct-space-between{
+    align-content: space-between !important ;
+}
+.al-ct-space-arround{
+    align-content: space-around !important ;
+}
+
+/* ==================================================================== Properties for the Children (flex items) */
+
+.felx-grow-1{
+	flex-grow: 1;
+}
+
+
+/* ==================================================================== Properties for the images */
+
+.img-fluid {
+    max-width: 50% !important ;
+    height: auto !important ;   
+}
+
+/* ================================== Alignement en fonctions de la largeur de la page */
+
+.responsive{ 
+    width: 100% !important ;
+    margin-right: auto !important ;
+    margin-left: auto !important ;
+}
+
+@media (min-width: 576px) {
+  .responsive {
+    max-width: 540px !important ;
+  }
+}
+@media (min-width: 768px) {
+  .responsive {
+    max-width: 720px !important ;
+  }
+}
+@media (min-width: 992px) {
+  .responsive {
+    max-width: 960px !important ;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive {
+    max-width: 1140px !important ;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive {
+    max-width: 1300px !important ;
+  }
+}
+@media (min-width: 1600px) {
+  .responsive {
+    max-width: 1600px !important ;  
+  }
+}
