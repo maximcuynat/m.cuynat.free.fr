@@ -8,12 +8,7 @@
 
      if(isset($valider)){
      	// Demmande de connexion
-     	if ($login == "") {
-     		$erreur = $erreur." Utilisateur invalide ! ";
-     	}
-     	if ($pass == "") {
-     		$erreur = $erreur." Mot de passe invalide ! ";
-     	}
+     	$erreur = "ok";
      }
 
 
@@ -41,13 +36,13 @@
 			<!-- Formulaire de conneixon -->
 			<form action="" method="post">
 				<div><h3 class="fs-3 mb-1">Nom d'utilisateur</h3></div>
-				<div><input type="text" name="user" placeholder="Username" class="form-control fs-5 mt-0 rounded-2 p-2 text-center"></div>
+				<div><input type="text" name="user" placeholder="Username" class="form-control fs-5 mt-0 rounded-2 p-2 text-center" required></div>
 				<div><h3 class="fs-3 mb-1">Mot de passe</h3></div>
 				<div>
-					<input id="password" type="password" name="password" placeholder="Password" class="form-control fs-5 mt-0 rounded-2 p-2 text-center">
-					<p onclick="voirMdp()" class="cursor-pointer text-center fs-5 my-3 mt-1">Voir le mot de passe</p>
+					<input id="password" type="password" name="password" placeholder="Password" class="form-control fs-5 mt-0 rounded-2 p-2 text-center" required>
+					<p onclick="voirMdp()" class="cursor-pointer text-center fs-5 my-4 mt-1">Voir le mot de passe</p>
 				</div>
-				<div><input type="submit" name="valider" value="Se connecter" class="fs-4 rounded-2 p-2" /></div>
+				<div><input type="submit" name="valider" value="Se connecter" class="fs-4 rounded-2 p-2"/></div>
 				
 				<!-- Affichage du message d'erreur ( commentaire pour Lisa  ^^ yip) -->
                 <?php if(!empty($erreur)){ ?>

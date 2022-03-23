@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/ManagerUser.php';
+require_once 'ManagerUser.php';
 
 abstract class Manager
 {
@@ -10,7 +10,7 @@ abstract class Manager
     {
         try
         {
-            self::$_bdd = new PDO('mysql:host=localhost;dbname=','root'); // ajouter apres dbname le nom de la base de donnée
+            self::$_bdd = new PDO('mysql:host=localhost;dbname=monblog','root'); // ajouter apres dbname le nom de la base de donnée
             self::$_bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         }
         catch(Exception $e)
@@ -27,6 +27,16 @@ abstract class Manager
         return self::$_bdd;
     }
 
+    protected function addUser($Username, $Password, $Mail, $notif)
+    {
+        // $reqAddUser = self::$_bdd->prepare("INSERT INTO User VALUES (?, ?, ?, ?)");
+        if($notif == "ok")
+            $notif = 1;
+        else
+            $notif = 0;
+        // $reqAddUser->execute(array($Username, $Password, $Mail, $notif));
+        print_r($reqAddUser);
+    }
     
 }
 ?>
