@@ -1,4 +1,4 @@
-<div class="fixed-top sticky-top responsive display-flex jc-end ">
+<div class="fixed-top sticky-top responsive display-flex jc-end felx-warp">
 	<div>
 		<h1 class="text-white mx-5"><a href="Acceuil.php">Acceuil</a></h1>
 	</div>
